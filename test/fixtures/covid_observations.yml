@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  observation_date: 2023-02-04
+  province: MyString
+  country: MyString
+  confirmed: 1
+  deaths: 1
+  recovered: 1
+  last_updated: 2023-02-04 18:12:03
+
+two:
+  observation_date: 2023-02-04
+  province: MyString
+  country: MyString
+  confirmed: 1
+  deaths: 1
+  recovered: 1
+  last_updated: 2023-02-04 18:12:03
