@@ -20,3 +20,6 @@ end
 
 CovidObservation.upsert_all(covid_observations)
 puts "#{ CovidObservation.count } record has been pushed"
+
+User.create(email: 'ellaneza@test.com', password: 'password')
+puts "Test user added"
