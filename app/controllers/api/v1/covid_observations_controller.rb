@@ -13,7 +13,7 @@ class Api::V1::CovidObservationsController < ApplicationController
     @covid_observations = CovidObservation.select("country, sum(confirmed) as confirmed,
                                                     sum(deaths) as deaths,
                                                     sum(recovered) as recovered")
-                                          .order("country asc")
+                                          .order("confirmed desc")
                                           .group("country")
                                           .where(observation_date: @observation_date)
   end
