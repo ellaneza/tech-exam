@@ -1,4 +1,4 @@
-class Api::V1::CovidObservationsController < ApplicationController
+class Api::V1::CovidObservationsController < Api::ApplicationController
   before_action :set_covid_observation, only: :confirmed
   def confirmed
     render json: {
