@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # Added this route just incase we don't want 
   # to use the route with version
   # - currently point this route to the 
@@ -12,6 +13,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       defaults format: :json do
         get '/top/confirmed', to: 'covid_observations#confirmed'
+        post 'authenticate', to: 'authentication#authenticate'
       end
     end
   end
